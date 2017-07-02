@@ -1,0 +1,50 @@
+<html>
+    <head> 
+        <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta charset="utf-8">
+    </head>
+
+<body>
+    <div class="field-container">
+        <label for="myId">Введите свой id</label>
+        <input type="text" id ="my-id" value="5679567">
+        <button id='set_id_btn'>Запомнить id</button>
+    </div>
+
+    <div id='album' class="hide">
+        <div class="field-container">
+            <label for="album_name">Название альбома</label>
+            <input type="text" id ="album_name">
+            <button id='create_album_btn'>Создать альбом</button>
+            <span id="album_res"></span>
+        </div>
+
+        <div class="field-container">  
+            <label for="my-album">Введите сюда id альбома (своего, в который будешь копировать)</label>
+            <input type="text" id ="my-album" value="245231604">
+            <button id='set-id-album'>Проверить</button>
+            <span id="id_res"></span>
+        </div>
+    </div>
+
+    <div id="check-url" class="field-container hide">
+        <label for="">Открой альбом из которого нужно скопировать фото и вставь адресную строку из браузера сюда</label>
+        <input type="text" id ="source_url" value="https://vk.com/id386721734?z=photo386721734_456246178%2Falbum386721734_242227640%2Frev">
+        <button id='analyze_url_btn'>Получить id пользователя и альбома</button>
+        <span id="analyze_res"></span>
+    </div>
+
+    <button id="copy_btn" class='hide'>Скопировать альбом</button>
+
+    <button id="test_btn">Test</button>
+
+
+    <script src="js/mvc/view.js"></script>
+    <script src="js/mvc/model.js"></script>
+    <script src="js/mvc/controller.js"></script>
+    <script src="js/test.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

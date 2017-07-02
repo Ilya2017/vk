@@ -1,0 +1,12 @@
+.field-container {
+    margin: 20px;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.hide {
+    display: none;
+}
